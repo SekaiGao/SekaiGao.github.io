@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <Sekai> <Gao>
-  email:             <1814868324sekaigao@gmail.com>
+  name:              Sekai Gao
+  email:             1814868324sekaigao@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -27,13 +27,13 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     #twitter:         <username>
-    github:          <SekaiGao>
-    email:           mailto:<1814868324sekaigao@gmail.com>
+    github:          SekaiGao
+    email:           mailto:1814868324sekaigao@gmail.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
-    # youtube:         <string_string_string>
+    youtube:         Sekai Gao
     # vimeo:           <username>
     # vine:            <username>
     # spotify:         <user>/<number>
