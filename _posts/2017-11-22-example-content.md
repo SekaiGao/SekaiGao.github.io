@@ -9,7 +9,13 @@ tags: [hydejack]
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-
+- **To bold text**, use `**To bold text**`.
+- *To italicize text*, use `*To italicize text*`.
+- Abbreviations, like HTML should be defined like this `*[HTML]: HyperText Markup Language`.
+- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
+- ~~Deleted~~ text should use `~~deleted~~` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+- 
 [Link to another page](another-page).
 
 There should be whitespace between paragraphs.
