@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Code
-slug: code
+title: Note
+slug: note
 menu: true
 order: 2
 description: >
