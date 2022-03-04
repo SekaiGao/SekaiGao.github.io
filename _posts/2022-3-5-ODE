@@ -1,0 +1,72 @@
+# ODE
+
+***
+>[ode.h](https://github.com/SekaiGao/ODE/blob/main/ode.h)
+***
+
+# [常微分方程](https://github.com/SekaiGao/ODE)
+
+>**说明:** Ordinary differential equations.
+>
+>注意所有ode求解函数被放置于命名空间ode中。
+>
+>**使用方法:** 你应该配置好cpp环境,然后将该头文件与.cpp文件置于同一个文件夹下。
+>
+>[一个例子。](https://github.com/SekaiGao/ODE/blob/main/example.cpp)
+
+### 1.关于匿名函数
+
+你可以以这样的方式定义lambda函数:
+```cpp
+auto func=[](ld x,ld y)->ld{return x*y+pow(x,3);};//f(x,y)
+```
+### 2.方法
+
+##### 显示欧拉方法
+
+```cpp
+template<typename function>
+ld explicit_Euler(function func,ls x,ld y0,long n=1000)//函数,区间,初值,迭代次数
+```
+
+##### 隐式欧拉方法
+
+```cpp
+template<typename function>
+ld implicit_Euler(function func,ls x,ld y0,long n=1000)//函数,区间,初值,迭代次数
+```
+
+##### 改进欧拉方法(显示梯形方法)
+
+```cpp
+template<typename function>
+ld Heun(function func,ls x,ld y0,long n=1000)//函数,区间,初值,迭代次数
+bool re(int row,int col)
+```
+##### 2阶泰勒方法
+
+阶数越高越精确,因为需要高阶导数,一般不用的。
+```cpp
+template<typename function,typename Diff>
+ld Taylor2(function func,Diff diff,ls x,ld y0,long n=1000)//函数,导数,区间,初值,迭代次数
+```
+
+##### 4阶Runge-Kutta方法
+
+```cpp
+template<typename function>
+ld RK4(function func,ls x,ld y0,long n=1000)//函数,区间,初值,迭代次数
+```
+
+##### 4/5阶Runge-Kutta-Fehlberg方法
+
+该方法有自适应的步长,可以以较少的循环次数达到较高的精度。
+```cpp
+template<typename function>
+ld RKF45(function func,ls x,ld y0,ld T=1e-4,ld h=0.1)//函数,区间,初值,容差,初始步长
+```
+***
+```
+2022.3.5 未完
+```
+***
