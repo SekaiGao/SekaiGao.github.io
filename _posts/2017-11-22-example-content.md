@@ -159,7 +159,9 @@ You can add large text by adding the `lead` class to a paragraph.
 ### Lead Images
 You can make an image span the full width by adding the `lead` class:
 
-![Full-width image](https://placehold.it/800x100){:.lead}
+<!-- ![Full-width image](https://placehold.it/800x100){:.lead} -->
+![Full-width image](https://github.com/SekaiGao/PDE/blob/main/h100k200.png)
+{:.lead}
 
 ## Tables
 Large (data) tables:
